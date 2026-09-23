@@ -1,0 +1,28 @@
+.light,
+.dark {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+  }
+}
+
+.light {
+  background: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-gray-100);
+}
+
+.dark {
+  background: #2f384f;
+  color: #56efe6;
+}

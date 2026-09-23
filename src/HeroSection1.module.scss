@@ -1,0 +1,126 @@
+.hero {
+  grid-column: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 2rem;
+  padding: 4rem 0 3rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.headline {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--color-black);
+}
+
+.subtext {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  color: var(--color-primary-dark);
+  max-width: 500px;
+}
+
+.devices {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.singleDevice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-gray-100);
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  color: var(--color-black);
+}
+
+.deviceImage {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.qrBlock {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--color-gray-100);
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+}
+
+.qrCode {
+  width: 90px;
+  height: 90px;
+}
+
+.qrText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.qrIcons {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+
+  img {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.qrTitle {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.qrSubtitle {
+  font-size: 0.85rem;
+  color: var(--color-primary-dark);
+}
+
+.right {
+  position: relative;
+}
+
+.appOfTheDay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: auto;
+  z-index: 2;
+}
+
+.imageStack {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.widgetsGrid {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.phoneMockup {
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+  width: 55%;
+  z-index: 1;
+}
